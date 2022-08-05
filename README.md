@@ -55,7 +55,7 @@
    
  * Após isso devemos procurar as diretivas LoadModules, e abaixo de todas elas vamos adicionar uma outra LoadModules a seguir:
  
-   > LoadModule php7.4_module "C:/php7.4/php7apache2_4.dll"
+   > LoadModule php7_module "C:/php7.4/php7apache2_4.dll"
   
  * Após isso no final do arquivo vamos adicionar uma diretiva chamada:
  
