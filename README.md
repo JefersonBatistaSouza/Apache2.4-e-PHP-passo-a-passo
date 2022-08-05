@@ -1,5 +1,5 @@
 # Apache2.4-e-PHP-passo-a-passo
-###Instalação do apache no windows
+### Instalação do apache no windows
 
 * Clique no Link para fazer o Download do Apache [Download Apache](https://www.apachelounge.com/download/#google_vignette)
 * Após download descompactar a pasta e mover a pasta Apache24 para "C:"
@@ -13,7 +13,7 @@
 * Acessar a pasta **bin** e executa o Apache como um serviço, com o comando **httpd.exe -k install** , após terminar deve-se permitir acesso
 * Inciar o serviço **Apache2.4**
 
-###Instalação do PHP
+### Instalação do PHP
 
 * Clique no link para fazer download do php [PHP DOWNLOAD](https://www.php.net/)
 * Após baixa extrair para a pasta C: e de preferência renomea-la. **Exemplo: php7.4**
