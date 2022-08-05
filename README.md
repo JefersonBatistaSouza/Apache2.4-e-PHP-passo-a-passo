@@ -20,36 +20,37 @@
 * Renomei o arquivo php.ini-development para php.ini
 * Acesse o arquivo php.ini e descomente as seguintes extenções
 
-    > extension=curl
-    > extension=gd2
-    > extension=mbstring
+    > extension=curl  
+    > extension=gd2  
+    > extension=mbstring  
     > extension=openssl
-    > extension=pdo_firebird
+    > extension=pdo_firebird  
     > extension=pdo_mysql
-    > extension=pdo_odbc
- 
+    > extension=pdo_odbc  
+     
  * Descomente também
     
-    > session.save_path ="/tmp"
+    > session.save_path ="/tmp"  
+    
     
 * e aponte para pasta temporária do windows
 
-    >session.save_path ="C:/Windows/temp"
- 
+    >session.save_path ="C:/Windows/temp"  
+    
 * Devemos mostrar onde estão as DLLs descomentando a linha a seguir:
   
     > extension_dir = "ext"
     
  * Agora temos que dizer pro Apache que o PHP está instalado na maquina, volte para a pasta do Apache e abra novamente o arquico httpd.conf.
   
-   > Abaixo destas linhas:
-   > _AddType application/x-compress .Z_
-   > _AddType application/x-gzip .gz .tgz_
-
+   > Abaixo destas linhas:  
+   > _AddType application/x-compress .Z_  
+   > _AddType application/x-gzip .gz .tgz_  
+   
  * escreva:
    
-   > AddHandler application/x-httpd-php .php
-   > AddType application/x-httpd-php .php .html
+   > AddHandler application/x-httpd-php .php  
+   > AddType application/x-httpd-php .php .html  
    > Action application/x-httpd-php "C:/php7.4/php-cgi.exe"
    
  * Após isso devemos procurar as diretivas LoadModules, e abaixo de todas elas vamos adicionar uma outra LoadModules a seguir:
@@ -58,7 +59,7 @@
   
  * Após isso no final do arquivo vamos adicionar uma diretiva chamada:
  
-   > PHPIniDir "C:/php7.4"
+   > PHPIniDir "C:/php7.4"  
    > Timeout 240
 
  * Adicione também mais um arquivo padrão, pesquise por index.html e modifique a linha confome abaixo:
